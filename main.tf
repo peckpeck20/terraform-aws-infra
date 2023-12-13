@@ -15,11 +15,11 @@ provider "aws" {
   secret_key = "AWS_SECRET_ACCESS_KEY"
 }
 
-resource "aws_instance" "app_server" {
-  ami           = "ami-830c94e3"
+resource "aws_instance" "sample_server" {
+  ami           = "ami-08d70e59c07c61a3a"
   instance_type = "t2.micro"
 
   tags = {
-    Name = "ExampleAppServerInstance"
+    Name = "MyServer"
   }
 }
