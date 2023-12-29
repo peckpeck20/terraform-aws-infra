@@ -20,6 +20,6 @@ resource "aws_instance" "sample_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = var.instance_name
+    Name = var.instance_name # Will use default variable value unless defiened on CLI apply command 
   }
 }

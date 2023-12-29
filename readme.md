@@ -32,6 +32,12 @@ terraform plan
 #4 deploy
 terraform apply
 
+#set custom variable
+terraform apply -var "instance_name=customNameYO"
+
+#Show all output values
+terraform output
+
 #Delete infrastructure
 terraform destroy
 ```
